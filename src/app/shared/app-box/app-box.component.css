@@ -43,17 +43,22 @@
 
   .toolbar #twitter-logo {
     height: 40px;
-    margin: 0 8px;
+    margin-left: 96px;
+    opacity: 0.8;
+    color: white;
   }
 
   .toolbar #youtube-logo {
     height: 40px;
-    margin: 0 16px;
+    margin-left: 32px;
+    opacity: 0.8;
+    color: white;
   }
 
   .toolbar #twitter-logo:hover,
   .toolbar #youtube-logo:hover {
-    opacity: 0.8;
+    opacity: 1;
+    color: white;
   }
 
   .content {
