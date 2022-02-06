@@ -7,6 +7,7 @@ import { AppBoxComponent } from './shared/app-box/app-box.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LinksComponent } from './pages/links/links.component';
+import { WalletComponent } from './pages/wallet/wallet.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LinksComponent } from './pages/links/links.component';
     AppBoxComponent,
     NotFoundComponent,
     HomeComponent,
-    LinksComponent
+    LinksComponent,
+    WalletComponent
   ],
   imports: [
     BrowserModule,
