@@ -7,3 +7,13 @@ ng g c components/info
 
 //tarea: pasar estilos al css
 //tarea: pasar cuerpo a component info
+
+git push --set-upstream origin min-app-pru
+
+git checkout -b min-app-pru2
+
+npm audit fix --force
+// chg    "@angular-devkit/build-angular": "^13.2.2",
+// 0 vulnerabilidades
+
+ng g c components/wallet
