@@ -33,3 +33,27 @@ git push --set-upstream origin min-app-pru2
 git checkout -b min-app-pru3
 
 web3: npm install --save web3
+// tarea: hacer un new de web3: error
+git commit ...
+
+git push --set-upstream origin min-app-pru2
+
+Soluciones:
+https://stackoverflow.com/questions/66749738/angular-web3-js-module-not-found-error-cant-resolve-crypto
+https://github.com/ChainSafe/web3.js/issues/4070 
+
+npm install crypto-browserify stream-browserify assert stream-http https-browserify os-browserify
+
+en tsconfig.ts
+{
+  "compilerOptions": {
+    "paths" : {
+      "crypto": ["./node_modules/crypto-browserify"],
+      "stream": ["./node_modules/stream-browserify"],
+      "assert": ["./node_modules/assert"],
+      "http": ["./node_modules/stream-http"],
+      "https": ["./node_modules/https-browserify"],
+      "os": ["./node_modules/os-browserify"],
+    }
+  }
+}
