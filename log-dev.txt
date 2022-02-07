@@ -28,3 +28,8 @@ ng g s services/blockchain --skip-tests
 git commit ...
 
 git push --set-upstream origin min-app-pru2
+
+
+git checkout -b min-app-pru3
+
+web3: npm install --save web3
