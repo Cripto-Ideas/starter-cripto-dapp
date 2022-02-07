@@ -11,6 +11,7 @@ export class WalletComponent implements OnInit {
   constructor(private bc: BlockchainService) { }
 
   ngOnInit(): void {
+    this.bc.loadWeb3();
   }
 
 }

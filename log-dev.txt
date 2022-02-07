@@ -68,3 +68,9 @@ https://github.com/ChainSafe/web3.js/issues/4070
  window.process = process;
  (window as any).global = window;
  global.Buffer = global.Buffer || Buffer;
+
+ Notas: la solucion de Amengual usa solo web3 (el problema es que usa la variable web3 de metamask y eso esta deprecado)
+ la clase Web parece ser una funcion y la forma en que la crea Cardenas puede ser mas elegante.
+ por otro lado gestumpf habla de la mejor forma de llamar a web3, tambien habria que verlo.
+ Nota: por ahora no usaria web3modal, no le veo ventajas y suma dependencias
+ 
