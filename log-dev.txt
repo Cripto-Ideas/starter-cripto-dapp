@@ -3,7 +3,7 @@ ng new ng-boot
 // new file: log-dev.txt
 git checkout -b min-app-pru
 
-ng g c components/info
+ng g c components/info  --skip-tests
 
 //tarea: pasar estilos al css
 //tarea: pasar cuerpo a component info
@@ -13,7 +13,18 @@ git push --set-upstream origin min-app-pru
 git checkout -b min-app-pru2
 
 npm audit fix --force
-// chg    "@angular-devkit/build-angular": "^13.2.2",
-// 0 vulnerabilidades
+// chg    "@angular-devkit/build-angular": "^13.2.2", volvimos a 0.1102.17
+// 0 vulnerabilidades, pero necesita angular cli13
 
-ng g c components/wallet
+ng g c components/wallet --skip-tests
+git commit ...
+
+// tarea copiar info a wallet y modificar
+git commit ...
+
+
+ng g s services/blockchain --skip-tests 
+//tarea : inyectar servicio
+git commit ...
+
+git push --set-upstream origin min-app-pru2
