@@ -1,0 +1,9 @@
+ng new ng-boot
+
+// new file: log-dev.txt
+git checkout -b min-app-pru
+
+ng g c components/info
+
+//tarea: pasar estilos al css
+//tarea: pasar cuerpo a component info
