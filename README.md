@@ -1,9 +1,10 @@
-# NgBoot
+# NgBoot (rama min-app-pru4)
 
-Este proyecto implementa la interface de una mini DApp y el llamado exitoso de web3 con web3modal en la version 11 de Angular. (rama min-app-pru4)
+Este proyecto implementa la interface de una mini DApp y el llamado exitoso de web3 con web3modal en la version 11 de Angular. 
+La interface la implementa con componentes en la unica pagina de aplicacion.
+El llamado a web3 se hace desde un servicio, perono recupera info. Es una prueba de concepto.
 
-
-## Generate
+## Generated...
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.17.
 
