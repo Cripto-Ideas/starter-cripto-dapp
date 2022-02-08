@@ -1,0 +1,64 @@
+**** web3.js
+
+github: https://github.com/ChainSafe/web3.js#readme
+github, error angular(oficial): https://github.com/ChainSafe/web3.js/blob/1.x/README.md#web3-and-angular
+npm: https://www.npmjs.com/package/web3 
+documentacion: https://web3js.readthedocs.io/en/v1.7.0/
+
+Notas:
+En el readme de web3 dice que se instala con:
+npm install web3
+
+pero ojo, tambien dice que en angular hay que solucionar errores con:
+https://github.com/ChainSafe/web3.js/blob/1.x/README.md#web3-and-angular
+
+New solution (3 tareas)
+If you are using Angular version >11 and run into an issue building, the old solution below will not work. This is because polyfills are not included in the newest version of Angular.
+
+tarea#1: Install the required dependencies within your angular project:
+npm install --save-dev crypto-browserify stream-browserify assert stream-http https-browserify os-browserify
+
+tarea#2: Within tsconfig.json add the following paths in compilerOptions so Webpack can get the correct dependencies
+{
+    "compilerOptions": {
+        "paths" : {
+        "crypto": ["./node_modules/crypto-browserify"],
+        "stream": ["./node_modules/stream-browserify"],
+        "assert": ["./node_modules/assert"],
+        "http": ["./node_modules/stream-http"],
+        "https": ["./node_modules/https-browserify"],
+        "os": ["./node_modules/os-browserify"],
+    }
+}
+
+tarea#3: Add the following lines to polyfills.ts file:
+import { Buffer } from 'buffer';
+
+(window as any).global = window;
+global.Buffer = Buffer;
+global.process = {
+    env: { DEBUG: undefined },
+    version: '',
+    nextTick: require('next-tick')
+} as any;
+
+Esta solucion funciona para v13:
+ import * as process from 'process';
+ import { Buffer } from 'buffer';
+ 
+ window.process = process;
+ (window as any).global = window;
+ global.Buffer = global.Buffer || Buffer;
+
+
+ 
+**** web3modal
+github: https://github.com/Web3Modal/web3modal 
+npm: https://www.npmjs.com/package/web3modal 
+demo: https://web3modal.com/ 
+
+nota: el tema es que tanto suma web3modal (parece que es solo un provider mas avanzado)
+
+
+**** material
+https://material.angular.io/guide/getting-started

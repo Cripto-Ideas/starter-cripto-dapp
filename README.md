@@ -1,4 +1,11 @@
-# NgBoot
+# NgBoot (rama min-web3-test)
+Este branch implementa el llamado exitoso de web3 en la version 11 de Angular. 
+
+El problema es que al incluir las librerias se produce un error que debe ser corregido (fix). Se reproduce el problema de la forma mas simple posible y despues se corrige. 
+
+Los pasos se detallan en doc/log4dev.txt y las referencia utilizadas en doc/references.txt
+
+## Generated...
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.17.
 

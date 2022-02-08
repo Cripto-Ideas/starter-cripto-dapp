@@ -1,0 +1,29 @@
+**** 2022/02/07
+ng version
+    Angular CLI: 11.2.17
+    Node: 14.15.5
+ng new ng-boot
+    [strict, router, css]
+ng serve
+
+new file: doc/log4dev.txt
+new file: doc/references.txt
+
+git add .
+git commit -m "log4dev"
+git add .
+git commit --amend --no-edit
+
+//*** rama: min-web3-test
+git checkout -b min-web3-test
+
+npm install web3
+
+//tarea: agregar web3 a app.component
+
+ng serve: da ERROR
+git commit...
+
+//tarea: fix web3 error
+git commit...
+//git push --set-upstream origin add-web3
